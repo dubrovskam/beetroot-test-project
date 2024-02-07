@@ -4,81 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Dubrovska Maria</title>
+    <!-- * Styles -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <!-- Main -->
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div><a href="../../index.html">Home Page</a></div>
-    <main>
-      <section id="home">
-        <h1>Дубровська Марія</h1>
+    <div class="app">
+      <main>
+        <section id="home">
+          <h1>Дубровська Марія</h1>
+          <div class="profession">Front-End Developer</div>
+        </section>
+        <header>
+          <!-- * Profile -->
+          <div class="profile-image-block">
+            <!-- Photo -->
+            <img class="profile-image" src="./img/myphoto.jpg" alt="photo" />
+          </div>
+          <!-- * Navigation -->
+          <nav class="navigation">
+            <div>
+              <a class="home-page" href="../../index.html">Home Page</a>
+            </div>
+            <ul>
+              <li><a href="#home">Головна</a></li>
+              <li><a href="#about">Про мене</a></li>
+              <li><a href="#contact">Контакти</a></li>
+            </ul>
+          </nav>
+        </header>
+        <!-- * Contacts -->
+        <section id="contact">
+          <h2>Контактна інформація</h2>
+          <div>Tel: <a href="tel:+380988644899">+380988644899</a></div>
+          <div>
+            Email:
+            <a href="mailto:mdubrovskaa116@gmail.com"
+              >mdubrovskaa116@gmail.com</a
+            >
+          </div>
+        </section>
+        <!-- * Content -->
+        <h2>Досвід роботи</h2>
         <div>
-          <b>Front-End Developer</b>
+          <b>Маршрутизатор - Суші"3303", Місто Запоріжжя, 2018 - 2020</b>
         </div>
-      </section>
-      <header>
-        <img src="./img/myphoto.jpg" alt="photo" width="250"/>
-        <nav>
-          <ul>
-            <li><a href="#home">Головна</a></li>
-            <li><a href="#about">Про мене</a></li>
-            <li><a href="#contact">Контакти</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section id="contact">
-        <h2>Контактна інформація</h2>
-        <div>Tel: <a href="tel:+380988644899">+380988644899</a></div>
-        <div>
-          Email:
-          <a href="mailto:mdubrovskaa116@gmail.com">mdubrovskaa116@gmail.com</a>
-        </div>
-      </section>
-      <h2>Досвід роботи</h2>
-      <div>
-        <b>Маршрутизатор - Суші"3303", Місто Запоріжжя, 2018 - 2020</b>
-      </div>
-      <p>
-        Обов'язки: Машрутизація замовлень, Управління якості обслуговування,
-        Зв'язок між філіалами, Моніторинг та звітність
-      </p>
-      <div>
-        <b>Декретна відпустка 2021</b>
-      </div>
-      <h2>Освіта</h2>
-      <table border="6">
-        <thead style="background: #ccffcc">
-          <tr>
-            <th>2014-2017</th>
-            <th>2017-2019</th>
-          </tr>
-        </thead>
-        <tbody align="center" style="background: #ffeecc">
-          <tr>
-            <td>Запорізький Гідроенергетичний Коледж ЗНУ, місто Запоріжжя</td>
-            <td>Запорізький Національний Університет, місто Запоріжжя</td>
-          </tr>
-          <tr>
-            <td>
-              Молодший спеціаліст - спеціальність "Інформаційні технології
-              підприємства"
-            </td>
-            <td>Бакалавр - спеціальність "Економічна кібернетика"</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>Навички</h2>
-      <ul>
-        <li>Google Workspace, Microsoft Office</li>
-        <li>HTML</li>
-        <li>Основи роботи з графічними редакторами</li>
-        <li>Автоматизація задач</li>
-      </ul>
-      <section id="about">
-        <h2>Зацікавлення та хобі</h2>
         <p>
-          Я цікавлюся IT-сферою, і люблю пізнавати нові речі. Люблю подорожувати
-          табудь-які екстримальні види спорту.
+          Обов'язки: Машрутизація замовлень, Управління якості обслуговування,
+          Зв'язок між філіалами, Моніторинг та звітність
         </p>
-      </section>
-    </main>
+        <div>
+          <b>Декретна відпустка 2021</b>
+        </div>
+        <h2>Освіта</h2>
+        <!-- * Table -->
+        <table class="table">
+          <thead class="headline">
+            <tr>
+              <th>2014-2017</th>
+              <th>2017-2019</th>
+            </tr>
+          </thead>
+          <tbody class="column">
+            <tr>
+              <td>Запорізький Гідроенергетичний Коледж ЗНУ, місто Запоріжжя</td>
+              <td>Запорізький Національний Університет, місто Запоріжжя</td>
+            </tr>
+            <tr>
+              <td>
+                Молодший спеціаліст - спеціальність "Інформаційні технології
+                підприємства"
+              </td>
+              <td>Бакалавр - спеціальність "Економічна кібернетика"</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Навички</h2>
+        <ul>
+          <li>Google Workspace, Microsoft Office</li>
+          <li>HTML</li>
+          <li>Основи роботи з графічними редакторами</li>
+          <li>Автоматизація задач</li>
+        </ul>
+        <section id="about">
+          <h2>Зацікавлення та хобі</h2>
+          <p>
+            Я цікавлюся IT-сферою, і люблю пізнавати нові речі. Люблю
+            подорожувати та будь-які екстримальні види спорту.
+          </p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Dubrovska</p>
+      </footer>
+    </div>
   </body>
 </html>

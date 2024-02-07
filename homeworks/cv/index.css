@@ -1,0 +1,74 @@
+/* * Prifile */
+
+.profile-image-block {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 100%;
+}
+
+/* * Content */
+
+.profession{
+  color: #5d9444;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+body { 
+  font-size: 16px;
+  margin-left: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #e5e4e0;
+}
+
+div+div{
+  color:rgb(101, 157, 157)
+}
+
+.home-page {
+  color: rgb(91, 182, 182);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navigation { 
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+/* * Table */
+
+.table {
+  border: 5px solid rgb(194, 208, 223);
+}
+/* Headline */
+
+.headline {
+  background-color: #b7e5f0;
+}
+
+.column {
+  text-align: center;
+  background-color: #ccfffe;
+}
+
+/* *Footer */
+
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
