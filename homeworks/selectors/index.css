@@ -1,0 +1,89 @@
+/* * Body */
+
+body {
+  background-color: #3b3f45;
+  font-size: 16px;
+  min-height: 100vh;
+  color: #fcfcfc;
+  background-color: #3b3f45;
+  font-family: "Roboto" sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*  * Navigation  */
+
+.list-home {
+  margin: 0 auto;
+  color: #fcfcfc;
+  padding: 10px;
+}
+
+/* * Heder */
+
+.header {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #4a4f56;
+  text-align: center;
+  color: #ff8984;
+  margin-bottom: 20px;
+}
+
+.header-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* * List */
+
+.list {
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+.list-label {
+  display: flex;
+  padding: 10px;
+  /* background-color: #88839e; */
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  gap: 10px;
+  align-items: center;
+}
+
+.list-label:hover {
+  border-color: #fcfcfc;
+}
+
+/* Чому не працює nth-child(2n)? */
+
+.list-item {
+  background-color: #88839e; 
+}
+
+.list-item:nth-child(2n) {
+  background-color: #625E77;
+}
+
+.list-checkbox:checked + .list-content {
+  text-decoration: line-through;
+}
+
+/* * Button */
+
+.block {
+  margin-top: 40px;
+}
+
+.block-button {
+  padding: 10px;
+  min-width: 530px;
+  background-color: #4A4F56;
+  color: #ff8984;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+}
