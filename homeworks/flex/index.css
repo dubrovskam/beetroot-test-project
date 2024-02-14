@@ -1,6 +1,8 @@
-* {
+/* * {
   border: 1px solid red;
-}
+} */
+
+/* * Global */
 
 body {
   font-size: 16px;
@@ -65,7 +67,7 @@ h6 {
   height: fit-content;
 }
 
-/* * Navigation */
+/* Header navigation */
 
 .navigation-link {
   padding: 10px;
@@ -82,7 +84,7 @@ h6 {
   display: flex;
 }
 
-/* * Buttons */
+/*  Header buttons */
 
 .header-button {
   display: flex;
@@ -107,6 +109,8 @@ h6 {
   transition: all 0.15s ease-in 0s;
 }
 
+/* * Buttons */
+
 .button--orange,
 .section--button,
 .features--button {
@@ -128,12 +132,6 @@ h6 {
   display: flex;
   align-items: center;
   gap: 55px;
-}
-
-.icon {
-  max-width: 50px;
-  width: 100%;
-  padding-bottom: 30px;
 }
 
 .section-text {
@@ -161,9 +159,17 @@ h6 {
   padding-bottom: 70px;
 }
 
+/* * Section features */
+
 .features--wrapper {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.icon {
+  max-width: 50px;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 .features-blocks {
@@ -189,4 +195,173 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* * Benefits */
+
+.benefits--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 110px;
+  line-height: 26px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* Benefits image */
+.benefits-image {
+  max-width: 560px;
+  width: 100%;
+}
+
+/* Benefits text */
+.text-design {
+  line-height: 44px;
+}
+
+.benefits-text {
+  margin-bottom: 40px;
+}
+
+/* Benefits list */
+.label-bold {
+  margin-bottom: 10px;
+}
+
+.benefits-label {
+  margin-bottom: 30px;
+}
+
+/* * Section product */
+
+.product--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  line-height: 26px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.product-image {
+  max-width: 570px;
+  width: 100%;
+}
+
+.product-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.product-managers {
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+.product-icon {
+  max-width: 35px;
+  min-width: 35px;
+  width: 100%;
+  display: flex;
+}
+
+.product-label {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* * Section marketers */
+
+.marketers--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+  line-height: 26px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* Marketers image */
+.marketers-image {
+  max-width: 540px;
+  width: 100%;
+}
+
+/* Marketers text */
+.text-marketers {
+  line-height: 44px;
+}
+
+.marketers-text {
+  margin-bottom: 40px;
+}
+
+/* Marketers list */
+.marketers-label {
+  margin-bottom: 30px;
+}
+
+/* * Footer */
+
+.footer {
+  min-height: 200px;
+}
+
+.footer--wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+  margin-top: 30px;
+  line-height: 26px;
+}
+
+.footer-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-text-form {
+  margin-bottom: 25px;
+  max-width: 280px;
+}
+
+.footer-list {
+  display: flex;
+  margin-bottom: 15px;
+}
+.list-link {
+  color: #544837;
+}
+
+.list-link:hover {
+  color: #ff9900;
+}
+
+.input {
+  max-width: 340px;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.footer--button {
+  margin-top: 15px;
+  background-color: #ff9900;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ff9900;
 }
