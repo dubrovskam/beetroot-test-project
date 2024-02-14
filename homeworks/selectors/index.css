@@ -2,7 +2,7 @@
 
 body {
   background-color: #3b3f45;
-  font-size: 16px;
+  font-size: 18px;
   min-height: 100vh;
   color: #fcfcfc;
   background-color: #3b3f45;
@@ -19,6 +19,7 @@ ul {
   margin: 0 auto;
   color: #fcfcfc;
   padding: 10px;
+  line-height: 18px;
 }
 
 /* * Heder */
@@ -42,34 +43,34 @@ ul {
 .list {
   max-width: 530px;
   margin: 0 auto;
+  line-height: 18px;
+  background-color: #88839e; 
+  /* font-family: 'Trebuchet MS', Arial, sans-serif; */
 }
 
 .list-label {
   display: flex;
   padding: 10px;
-  /* background-color: #88839e; */
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   gap: 10px;
+  transition: all 0.1s ease-in;
   align-items: center;
 }
 
 .list-label:hover {
   border-color: #fcfcfc;
-}
-
-/* Чому не працює nth-child(2n)? */
-
-.list-item {
-  background-color: #88839e; 
-}
-
-.list-item:nth-child(2n) {
   background-color: #625E77;
+}
+
+.list:nth-child(2n) {
+  background-color: #7A7593
+  ;
 }
 
 .list-checkbox:checked + .list-content {
   text-decoration: line-through;
+  /* color: #88839e; */
 }
 
 /* * Button */
