@@ -73,6 +73,7 @@ h6 {
   padding: 10px;
   display: flex;
   transition: all 0.15s ease-in 0s;
+  color: #2F281E;
 }
 
 .navigation-link:hover {
