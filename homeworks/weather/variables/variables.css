@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --c-blue: #3399cc;
+  --c-steel-blue: #2b81ac;
+  --c-white: #fff;
+  --c-sky-blue: #70b8db;
+  --c-turquoise: #33cccc;
+  --c-medium-orchid: #996699;
+  --c-indian-red: #c24747;
+  --c-tomato: #e2674a;
+  --c-khaki: #ffcc66;
+  --c-dark-sea-green: #99cc99;
+  --c-cadet-blue: #669999;
+  --c-pale-violet-red: #cc6699;
+  --c-medium-sea-green: #339966;
+  --c-slate-blue: #666699;
+  /* Fonts */
+  --f-base: 'Lucida Sans Unicode', sans-serif;
+  /* Font size */
+  --fs-base: 22px;
+}
