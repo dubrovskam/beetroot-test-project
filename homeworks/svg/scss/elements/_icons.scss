@@ -1,0 +1,22 @@
+.icon-clover {
+  color: var(--c--medium-sea-green);
+  display: flex;
+}
+.icon-megaphone, .icon-phone, .icon-building {
+  font-size: 52px;
+  display: flex;
+  border: 1px solid var(--c-white-smoke);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.icon-instagram, .icon-facebook, .icon-github, .icon-dribbble, .icon-twitter {
+  color: var(--c-black);
+  font-size: 20px;
+  display: flex;
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    color: var(--c--medium-sea-green);
+  }
+}

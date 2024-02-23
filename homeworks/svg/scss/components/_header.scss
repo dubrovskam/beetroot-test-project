@@ -1,0 +1,15 @@
+.header {
+  border-bottom: 1px solid var(--c-white-smoke);
+  font-size: 35px;
+  line-height: 35px;
+  padding-bottom: 22px;
+
+  &--wrapper {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,49 @@
+.circle-line {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: var(--c-indigo);
+  border: 12px solid var(--c-white);
+  border-radius: 50%;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+  
+  &--top {
+    top: 0;
+    left: calc(50% - 50px);
+    &:active{
+      transform: translateY(50px);
+    }
+  }
+  &--top-right {
+    top: calc(20% - 50px);
+    right: calc(20% - 50px);
+    &:active{
+      transform: translate(-50px, 50px);
+    }
+  }
+  &--right {
+    left: calc(100% - 100px);
+    &:active{
+      transform: translateX(-50px);
+    }
+  }
+  &--right-bottom {
+    bottom: calc(20% - 50px);
+    right: calc(20% - 50px);
+  }
+  &--bottom {
+    bottom: 0;
+  }
+  &--left-bottom {
+    bottom: calc(20% - 50px);
+    left: calc(20% - 50px);
+  }
+  &--left {
+    right: calc(100% - 100px);
+  }
+  &--left-top {
+    top: calc(20% - 50px);
+    left: calc(20% - 50px);
+  }
+}
