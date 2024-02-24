@@ -1,0 +1,17 @@
+{
+  "name": "pug",
+  "version": "1.0.0",
+  "description": "my first pug project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pug -w src/index.pug --out ."
+  },
+  "keywords": [
+    "pug",
+    "scss",
+    "html",
+    "css"
+  ],
+  "author": "mdubrovskaa116@gmail.com dubrovska mariia",
+  "license": "ISC"
+}
