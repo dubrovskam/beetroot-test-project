@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <!-- * Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- * Styles -->
+    <link rel="stylesheet" href="./variables/variables.css" />
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!--  * Header -->
+      <header class="header">
+        <nav>
+          <a class="home" href="../../index.html">Home Page</a>
+        </nav>
+      </header>
+      <!--  * Main -->
+      <main class="main">
+        <div class="blocks wrapper">
+          <div class="forms">
+            <form class="form" method="get">
+              <h1 class="form-title">Create an Account</h1>
+              <div class="form-name">
+                <label>
+                  <div class="title">First Name</div>
+                  <input required type="text" name="firstName" />
+                  <div class="error">Fill in this field</div>
+                </label>
+                <label>
+                  <div class="title">Last Name</div>
+                  <input required type="text" name="lastName" />
+                  <div class="error">Fill in this field</div>
+                </label>
+              </div>
+              <label>
+                <div class="title">E-mail</div>
+                <input required type="email" name="email" />
+                <div class="error">Fill in this field</div>
+                <p class="paragraph">
+                  We'll never share your email with anyone else.
+                </p>
+              </label>
+              <div class="block-radio">
+                <label>
+                  <span>Male</span>
+                  <input type="radio" name="gender" value="male" />
+                </label>
+                <label>
+                  <span>Female</span>
+                  <input type="radio" name="gender" value="female" />
+                </label>
+              </div>
+              <div class="block-place">
+                <label>
+                  <div class="title">Country</div>
+                  <select class="country" name="country">
+                    <option selected value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Canada">Canada</option>
+                  </select>
+                </label>
+                <label>
+                  <div class="title">City</div>
+                  <input required type="text" name="city" />
+                  <div class="error">Fill in this field</div>
+                </label>
+              </div>
+              <button type="submit" class="button">
+                <span class="button-text">Sign Up</span>
+              </button>
+
+              <div class="text">
+                <p>
+                  By clicking the 'Sign Up' button, you confirm that you accept
+                  our <a href="/">Terms of Use</a> and
+                  <a href="/">Privacy Policy</a>.
+                </p>
+              </div>
+              <div class="login">
+                <span>Have an account?</span>
+                <a href="/">Log In</a>
+              </div>
+            </form>
+          </div>
+          <!-- * Form 2 -->
+
+          <div class="forms">
+            <form method="get">
+              <h1 class="form-title">Profile</h1>
+
+              <div class="block-file">
+                <div class="block-photo">
+                  <img  src="./assets/image.png" alt="photo" />
+                </div>
+                <div class="file">
+                  <input type="file" name="avatar">
+                  <img class="file-photo" src="./assets/file.svg" alt="file">
+                  <div class="file-px">Up to 1 MB (300x300 px)</div>
+                </div>
+                
+              </div>
+
+              <div class="block-information">
+                <label>
+                  <div class="title">Name</div>
+                  <input required type="text" name="name" />
+                  <div class="error">Fill in this field</div>
+                </label>
+
+                <label>
+                  <div class="title">E-mail</div>
+                  <input required type="email" name="email" />
+                  <div class="error">Fill in this field</div>
+                </label>
+
+                <label>
+                  <div class="title">Country</div>
+                  <select class="country" name="country">
+                    <option selected value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Canada">Canada</option>
+                  </select>
+                </label>
+                <label>
+                  <div class="title">City</div>
+                  <input required type="text" name="city" />
+                  <div class="error">Fill in this field</div>
+                </label>
+                <label>
+                  <div class="title">Zip Code</div>
+                  <input required type="number" name="zip" minlength="4" />
+                  <div class="error">Fill in this field</div>
+                </label>
+                <label>
+                  <div class="title">Phone Number</div>
+                  <input required type="number" name="number" minlength="10" />
+                  <div class="error">Fill in this field</div>
+                </label>
+              </div>
+              <button type="submit" class="button button-update">
+                <span class="button-text">Update</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
