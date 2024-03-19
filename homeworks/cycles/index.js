@@ -98,30 +98,67 @@ if (purchaseAmount >= 0) {
 }
 
 // * Task 4
-const daysOfWeek = [      
-  'Mon',
-  'Tue',
-  'Wed',
-  'Thu',
-  "Fri",
-  'Sat',
-  'Sun',
-];
+const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-let index = 0;
+// .length - к-ть елементів у масиві
+for (let i = 0; ; i++) {
+  console.log(daysOfWeek[i]);
 
-// Цикл для відображення днів тижня та запиту у користувача
-while (true) {
-  // Вивести поточний день тижня та запитати користувача
-  let userResponse = confirm(
-    `${daysOfWeek[index]}. Хочеш побачити наступний день?`
-  );
-
-  // Якщо користувач відмовився або досягнуто кінця тижня, вийти з циклу
-  if (!userResponse) {
+  if (!confirm('Want to see the next day?')) {
     break;
   }
 
-  // Перейти до наступного дня тижня
-  index++;
+  if (i === daysOfWeek.length - 1) {
+    i = -1; // -1, бо наступна ітерація збільшить індекс на 1
+  }
 }
+
+// * Task 5
+let min = 0;
+let max = 100;
+let userNumber;
+
+for (;;) {
+  userNumber = Math.floor((min + max) / 2);
+
+  let userAnswer = prompt(
+    `Your number > ${userNumber}, < ${userNumber}, or = ${userNumber}? Answer: '>', '<' or '='`
+  );
+
+  if (userAnswer === '>') {
+    min = userNumber + 1;
+  } else if (userAnswer === '<') {
+    max = userNumber - 1;
+  } else {
+    break;
+  }
+}
+console.log(`Your number: ${userNumber}`);
+
+// * Task 6
+for (let i = 2; i <= 9; i++) {
+  console.log(`Multiplication table for number ${i}:`);
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+  console.log('\n'); // Порожній рядок
+}
+
+// * Task 7
+let day = +prompt('Enter the day:');
+let month = +prompt('Enter month:');
+let year = +prompt('Enter the year:');
+
+const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+if (day >= daysInMonth[month - 1]) {
+  day = 1;
+  month++;
+}
+
+if (month > 12) {
+  month = 1;
+  year++;
+}
+
+console.log(`Enter the day: ${day}.${month}.${year}`);
