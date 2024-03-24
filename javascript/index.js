@@ -1,5 +1,10 @@
 import objects from './js/objects.js';
-objects();
 
 import functions from './js/functions.js';
-functions();
+
+import array from './js/array.js';
+
+
+objects();
+// functions();
+array();
