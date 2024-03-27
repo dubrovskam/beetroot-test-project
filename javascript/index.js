@@ -4,7 +4,10 @@ import functions from './js/functions.js';
 
 import array from './js/array.js';
 
+import domPlayList from './js/dom-playlist.js';
 
-objects();
+
+// objects();
+domPlayList();
 // functions();
-array();
+// array();
