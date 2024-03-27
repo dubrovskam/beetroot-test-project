@@ -8,6 +8,6 @@ import domPlayList from './js/dom-playlist.js';
 
 
 // objects();
-domPlayList();
 // functions();
-// array();
+array();
+domPlayList();
