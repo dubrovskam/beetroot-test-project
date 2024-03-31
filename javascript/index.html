@@ -12,6 +12,40 @@
       <h1>Java Script</h1>
       <h3 id="js-title">Play List</h3>
       <ol id="js-list"></ol>
+
+      <div>
+        <form class="form" id="js-search-form">
+          <h3 class="form-title">Select a movie</h3>
+          <div class="form-name">
+            <label>
+              <input
+                class="input"
+                required
+                type="text"
+                name="movieName"
+                id="js-search-input"
+                placeholder="Enter movie title"
+              />
+              <!-- <div class="error" id="js-error-field">Fill in this field</div> -->
+            </label>
+
+            <label>
+              <select class="movie-type-select" name="movieType" id="js-type-select">
+                <option selected value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+              </select>
+            </label>
+            <button type="submit" class="button">Search</button>
+          </div>
+        </form>
+
+        <div id="js-content">
+          <div id="js-movies-list"></div>
+          <div id="js-pagination"></div>
+          <div id="js-movie-details"></div>
+        </div>
+      </div>
     </div>
     <script type="module" defer src="./index.js"></script>
   </body>
