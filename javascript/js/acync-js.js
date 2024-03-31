@@ -1,5 +1,5 @@
 const apiKey = '5abd21ea';
-const apiUrl = 'http://www.omdbapi.com/';
+const apiUrl = 'https://www.omdbapi.com/';
 
 const asyncJS = () => {
   const searchForm = document.getElementById('js-search-form');
