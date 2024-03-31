@@ -14,4 +14,3 @@ import asyncJS from './js/acync-js.js';
 // array();
 domPlayList();
 asyncJS();
-console.log('ghbd');

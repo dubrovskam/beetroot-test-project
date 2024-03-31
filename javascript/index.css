@@ -20,6 +20,7 @@
 /* Async JS */
 .form {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .form-title {
@@ -53,6 +54,7 @@
   padding: 10px;
   margin-bottom: 15px;
   text-align: center;
+  border-bottom: 1px solid #000000;
 }
 
 .movie-title {
