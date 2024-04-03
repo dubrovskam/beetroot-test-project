@@ -125,30 +125,56 @@ const objects = () => {
   console.log(time.showTime());
 
   // * Task 3
-  const operations = {
-    // Функція для додавання
-    add: function (a, b) {
-      return a + b;
+  const fraction = {
+    add: function (numerator1, denominator1, numerator2, denominator2) {
+      const newNumerator =
+        numerator1 * denominator2 + numerator2 * denominator1;
+      const newDenominator = denominator1 * denominator2;
+      return simplifyFraction(newNumerator, newDenominator);
     },
 
-    // Функція для віднімання
-    subtract: function (a, b) {
-      return a - b;
+    subtract: function (numerator1, denominator1, numerator2, denominator2) {
+      const newNumerator =
+        numerator1 * denominator2 - numerator2 * denominator1;
+      const newDenominator = denominator1 * denominator2;
+      return simplifyFraction(newNumerator, newDenominator);
     },
 
-    // Функція для множення
-    multiply: function (a, b) {
-      return a * b;
+    multiply: function (numerator1, denominator1, numerator2, denominator2) {
+      const newNumerator = numerator1 * numerator2;
+      const newDenominator = denominator1 * denominator2;
+      return simplifyFraction(newNumerator, newDenominator);
     },
 
-    // Функція для ділення
-    divide: function (a, b) {
-      if (b === 0) {
-        return 'Error: Division by zero';
-      }
-      return a / b;
+    divide: function (numerator1, denominator1, numerator2, denominator2) {
+      const newNumerator = numerator1 * denominator2;
+      const newDenominator = denominator1 * numerator2;
+      return simplifyFraction(newNumerator, newDenominator);
     },
   };
+
+  function simplifyFraction(numerator, denominator) {
+    const gcd = findGCD(numerator, denominator); // Функція findGCD призначена для знаходження найбільшого спільного дільника (НСД) двох чисел
+    const simplifiedNumerator = numerator / gcd;
+    const simplifiedDenominator = denominator / gcd;
+    return {
+      numerator: simplifiedNumerator,
+      denominator: simplifiedDenominator,
+    };
+  }
+
+  function findGCD(a, b) {
+    if (b === 0) {
+      return a;
+    }
+    return findGCD(b, a % b);
+  }
+
+  // Приклад використання
+  console.log('Addition:', fraction.add(3, 4, 2, 5));
+  console.log('Subtraction:', fraction.subtract(3, 4, 2, 5));
+  console.log('Multiplication:', fraction.multiply(3, 4, 2, 5));
+  console.log('Division:', fraction.divide(3, 4, 2, 5));
 };
 
 export default objects;

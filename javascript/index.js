@@ -1,4 +1,4 @@
-// import objects from './js/objects.js';
+import objects from './js/objects.js';
 
 // import functions from './js/functions.js';
 
@@ -9,7 +9,7 @@ import domPlayList from './js/dom-playlist.js';
 import asyncJS from './js/acync-js.js';
 
 
-// objects();
+objects();
 // functions();
 // array();
 domPlayList();
